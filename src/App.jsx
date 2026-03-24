@@ -212,7 +212,8 @@ function CardItem({ card, game }) {
     }
 
     // 4. Local Proxy as a final fallback
-    urls.push(`http://localhost:3001/api/proxy-image?url=${encodeURIComponent(off1)}`);
+    const fallbackUrl = `http://localhost:3001/api/proxy-image?url=${encodeURIComponent(off1)}`;
+    urls.push(fallbackUrl);
     
     return [...new Set(urls)]; // Remove duplicates
   };
