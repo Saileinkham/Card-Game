@@ -1,0 +1,24 @@
+{
+  "name": "gamecard",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run start-proxy & vite",
+    "start-proxy": "node proxy/index.cjs",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "node-fetch": "^2.7.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "vite": "^8.0.2"
+  }
+}
